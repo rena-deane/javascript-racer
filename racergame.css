@@ -1,10 +1,20 @@
+table {
+  border-collapse: separate;
+
+  border-spacing: 0 10px;
+}
+tr {
+  background-color: #888888;
+}
+
 .racer_table td {
-  background-color: white;
-  height: 20px;
-  width: 20px;
-  border: 1px solid black;
+  height: 40px;
+  width: 60px;
+  text-align: center;
 }
 
 .racer_table td.active {
   background-color: black;
+  color: white;
+  border: 1px solid green;
 }
