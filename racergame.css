@@ -1,20 +1,48 @@
-table {
-  border-collapse: separate;
+body {
+  background: #d6d4d4;
+}
 
+h1 {
+  font-family: 'Roboto Slab', serif;
+  color: #a57629;
+  text-align: center;
+}
+
+div.row {
+  margin: 10px 0;
+  text-align: center;
+}
+
+th {
+  text-transform: uppercase;
+  width: 100px;
+  color: #ffffff;
+  text-align: right;
+}
+
+table.racer_table {
+  border-collapse: separate;
   border-spacing: 0 10px;
 }
 tr {
-  background-color: #888888;
+  background-color: #f7e0af;
 }
 
 .racer_table td {
-  height: 40px;
-  width: 60px;
+  height: 60px;
+  width: 80px;
   text-align: center;
 }
 
 .racer_table td.active {
-  background-color: black;
+  background-image: url("images/car.png");
+  background-repeat: no-repeat;
+  background-size: 100% 80%;
   color: white;
-  border: 1px solid green;
+  background-position: center center;
 }
+
+input.button {
+  background-color: #ffffff;
+}
+
