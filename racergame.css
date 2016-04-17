@@ -19,12 +19,6 @@ p {
   margin: 1em;
 }
 
-p.description {
-  color: #a57629;
-  text-align: center;
-  font-family: 'Roboto Slab', serif;
-}
-
 div.row {
   margin: 10px 0;
   text-align: center;
