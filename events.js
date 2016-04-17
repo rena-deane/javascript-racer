@@ -1,3 +1,18 @@
+var howToPlay = document.getElementById('rules');
+howToPlay.addEventListener("mouseover", showRules);
+  function showRules(){
+    toolTip = document.querySelector(".container .row .tooltip span.tooltiptext")
+    toolTip.classList.add("show");
+  }
+
+var leavehowToPlay = document.getElementById('rules');
+leavehowToPlay.addEventListener("mouseleave", hideRules);
+  function hideRules(){
+    toolTip = document.querySelector(".container .row .tooltip span.tooltiptext.show")
+    toolTip.classList.remove("show");
+  }
+
+
 var addPlayers =  document.getElementById('addPlayer');
 addPlayers.addEventListener("click", addPlayer, false);
   function addPlayer () {

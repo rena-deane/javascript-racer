@@ -8,15 +8,44 @@ h1 {
   text-align: center;
 }
 
+th {
+  text-transform: uppercase;
+  width: 100px;
+  color: #888888;
+}
+
+p {
+  text-align: left;
+  margin: 1em;
+}
+
 div.row {
   margin: 10px 0;
   text-align: center;
 }
 
-th {
-  text-transform: uppercase;
-  width: 100px;
-  color: #888888;
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 20em;
+    background-color: #5f5f5f;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltip .tooltiptext.show {
+  visibility: initial;
 }
 
 th:first-child {
