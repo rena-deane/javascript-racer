@@ -10,7 +10,6 @@
 
   <body>
     <div class="wrapper">
-
       <div class="container">
         <div class="row">
           <div class="twelve columns heading">
@@ -19,14 +18,15 @@
         </div>
         <div class="row">
           <div class="four columns">
-            <input id="rules" class="button" type="button" name="rules" value="How to Play">
-          </div>
-          <div class="four columns">
-            <input id="setTrack" class="button" type="button" name="setTrack" value="Set Track">
+            <input id="rules" class="button" type="button" name="rules" value="How to Play" />
           </div>
 
           <div class="four columns">
-            <input id="addPlayer" class="button" type="button" name="addPlayers" value="Add a Player">
+            <input id="addPlayer" class="button" type="button" name="addPlayers" value="Add a Player" />
+          </div>
+
+          <div class="four columns restart">
+            <input type="button" id="playAgain" name="playAgain" value="Go Again" />
           </div>
         </div>
 
@@ -38,12 +38,20 @@
               <td class="start active"></td>
               <td></td>
               <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td class="end"></td>
             </tr>
             <tr id="player2_strip">
               <th>Player 2</th>
               <td class="start active"></td>
               <td></td>
               <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td class="end"></td>
             </tr>
           </table>
           </div>

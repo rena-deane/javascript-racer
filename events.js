@@ -1,8 +1,18 @@
-var addPlayers =  document.getElementById('addPlayer')
-
+var addPlayers =  document.getElementById('addPlayer');
 addPlayers.addEventListener("click", addPlayer, false);
   function addPlayer () {
-
+    var players = prompt("How many want to play? Pick a number!"); {
+      if (isNaN(players)){
+        alert("Ehara tena i te nama. That's not a number");
+        var players = prompt("How many want to play? Pick a number!");
+      }
+      else{
+        alert("Feature still to come. Lets Play")
+      }
+    }
+    /*for (var i = 0; i<=players; i++){
+      //trying to add rows based on the "players"
+    }*/
   }
 
 document.addEventListener('keyup', advancePlayer, false);
@@ -12,9 +22,9 @@ document.addEventListener('keyup', advancePlayer, false);
       nextPosition1 = currentPosition1.nextElementSibling;
       if (nextPosition1 === null){
         alert("Player 1 Wins");
+        restart = document.querySelector("div.four.columns.restart");
+        restart.classList.add("again");
         // reset();
-          // announceWinner = document.getElementById("winner")
-          // announceWinner.innerHTML = "Player 1 Wins";
       } 
       else {
       currentPosition1.classList.remove("active");
@@ -25,10 +35,11 @@ document.addEventListener('keyup', advancePlayer, false);
       currentPosition2 = document.querySelector("#player2_strip td.active");
       nextPosition2 = currentPosition2.nextElementSibling;
       if (nextPosition2 === null){
-        alert("Player 2 Wins");
+        alert("Player 2 Wins");{
+        restart = document.querySelector("div.four.columns.restart");
+        restart.classList.add("again");
+        }
         // reset();
-          // announceWinner = document.getElementById("winner")
-          // announceWinner.innerHTML = "Player 2 Wins";
         }
       else {
       currentPosition2.classList.remove("active");
@@ -37,4 +48,17 @@ document.addEventListener('keyup', advancePlayer, false);
     }
   };
 
+playAgain = document.getElementById('playAgain');
+playAgain.addEventListener("click", startAgain);
+
+  function startAgain(){
+    currentPosition = document.querySelectorAll("td.active");
+    for (var i = 0; i < currentPosition.length; i++){
+      currentPosition[i].classList.remove("active");
+      }
+    start1 = document.querySelector("#player1_strip td.start");
+    start1.classList.add("active");
+    start2 = document.querySelector("#player2_strip td.start");
+    start2.classList.add("active");
+  }
 // function reset();
