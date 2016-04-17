@@ -1,8 +1,9 @@
 body {
   background: #d6d4d4;
+  font-family: Arial, sans-serif;
 }
 
-h1 {
+h1, p.description{
   font-family: 'Roboto Slab', serif;
   color: #a57629;
   text-align: center;
