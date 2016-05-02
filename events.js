@@ -19,15 +19,10 @@ addPlayers.addEventListener("click", addPlayer, false);
     var players = prompt("How many want to play? Pick a number!"); {
       if (isNaN(players)){
         alert("Ehara tena i te nama. That's not a number");
-        var players = prompt("How many want to play? Pick a number!");
-      }
-      else{
-        alert("Feature still to come. Lets Play")
+        players = prompt("How many want to play? Pick a number!");
+        return players
       }
     }
-    /*for (var i = 0; i<=players; i++){
-      //trying to add rows based on the "players"
-    }*/
   }
 
 document.addEventListener('keyup', advancePlayer, false);
