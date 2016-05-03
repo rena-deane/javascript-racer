@@ -13,5 +13,22 @@ leavehowToPlay.addEventListener("mouseleave", hideRules);
     toolTip.classList.remove("show");
   }
 
-
-// function reset();
+//set Players
+var askforPlayers = document.getElementById('addPlayers');
+askforPlayers.addEventListener("click", choosePlayers);
+  function choosePlayers(num){
+    var setPlayers = prompt("How many players? Up to 4 players at a time.");
+    if (isNaN(setPlayers)){
+      alert("Please enter a number");
+      setPlayers = prompt("How many players? Up to 4 players at a time.");
+      return setPlayers;
+    }
+    else if (setPlayers > 4) {
+      alert(setPlayers + " is over the player limit!");
+      setPlayers = prompt("Please choose between 1-4 players");
+      return setPlayers;
+    }
+    else {
+      return setPlayers
+    }
+  }
