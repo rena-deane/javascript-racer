@@ -1,1 +1,1 @@
-var HTMLaddtoTrack = '<td></td>'
+var HTMLaddtoTrack = '<td class="addTrack"></td>'
