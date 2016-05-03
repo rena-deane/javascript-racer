@@ -84,11 +84,11 @@ input.button {
   background-color: #ffffff;
 }
 
-div.four.columns.restart {
+div.twelve.columns.restart {
   display: none;
 }
 
-div.four.columns.restart.again  {
+div.twelve.columns.restart.again  {
   display: initial;
 }
 
