@@ -14,7 +14,8 @@
         <div class="row">
           <div class="twelve columns heading">
             <h1>Race Car Game</h1>
-            <p class="description">2 Player Game without Release 4 Features!</p>
+            <h2>I'M ADDING NEW FEATURES. COMING SOON!</h2>
+            <p class="description">Lets see how this goes</p>
           </div>
         </div>
         <!-- row of buttons -->
@@ -38,42 +39,39 @@
               <p><strong>First to the end wins!</strong></p>
             </span>
           </div>
-          <!-- set players button -->
-          <div class="four columns">
-            <input id="addPlayers" class="button" type="button" name="addPlayers" value="Choose Players" />
-          </div>
-          <!-- set track length -->
+
+        <!-- set track length -->
           <div class="four columns">
             <input id="setTrack" class="button" type="button" name="addPlayers" value="Set Track" />
           </div>
-        </div>
-
-        <div class="row">
-          <div class="twelve columns restart">
+        
+        <!-- restart -->
+          <div class="four columns restart">
             <input type="button" id="playAgain" name="playAgain" value="Go Again" />
           </div>
         </div>
+      </div>
 
         <div class="row">
           <div class="twelve columns raceTrack">
             <table class="racer_table">
-            <tr id="player1_strip">
-              <th>Player 1</th>
+            <tr id="player1_strip" class="playerButton">
+              <th class="playerButton">1</th>
               <td class="start active"></td>
               <td class="end"></td>
             </tr>
-            <tr id="player2_strip" class="extraStrip">
-              <th>Player 2</th>
+            <tr id="player2_strip" class="playerButton">
+              <th class="playerButton">2</th>
               <td class="start active"></td>
               <td class="end"></td>
             </tr>
-            <tr id="player3_strip">
-              <th>Player 3</th>
+            <tr id="player3_strip" class="playerButton">
+              <th class="playerButton">3</th>
               <td class="start active"></td>
               <td class="end"></td>
             </tr> 
-            <tr id="player4_strip">
-              <th>Player 4</th>
+            <tr id="player4_strip" class="playerButton">
+              <th class="playerButton">4</th>
               <td class="start active"></td>
               <td class="end"></td>
             </tr>
@@ -82,10 +80,9 @@
         </div>
       </div>
     </div>
-    <script src="events.js" type="text/javascript"></script>
-    <script src="helper.js" type="text/javascript"></script>
-    <script type="text/javascript">
-      if (document.querySelectorAll('tr#player1_strip td.addTrack').length === 0){
+    <script src="js/events.js" type="text/javascript"></script>
+    <script src="js/helper.js" type="text/javascript"></script>
+      <!-- if (document.querySelectorAll('tr#player1_strip td.addTrack').length === 0){
         document.getElementById('player1_strip').style.display = "none";
       }if (document.querySelectorAll('tr#player2_strip td.addTrack').length === 0){
         document.getElementById('player2_strip').style.display = "none";
@@ -94,8 +91,6 @@
         document.getElementById('player3_strip').style.display = "none";
       }if (document.querySelectorAll('tr#player4_strip td.addTrack').length === 0){
         document.getElementById('player4_strip').style.display = "none";
-      }
-    //if no player 3 or 4 then don't show
-    </script>
+      } -->
   </body>
 </html>
