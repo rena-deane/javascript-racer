@@ -73,23 +73,23 @@
         <div class="row">
           <div class="twelve columns raceTrack">
             <table class="racer_table">
-            <tr id="player1_strip" class="playerButton">
-              <th class="playerButton">1</th>
+            <tr id="player1_strip">
+              <th>1</th>
               <td class="start active"></td>
               <td class="end"></td>
             </tr>
-            <tr id="player2_strip" class="playerButton">
-              <th class="playerButton">2</th>
+            <tr id="player2_strip">
+              <th>2</th>
               <td class="start active"></td>
               <td class="end"></td>
             </tr>
-            <tr id="player3_strip" class="playerButton">
-              <th class="playerButton">3</th>
+            <tr id="player3_strip">
+              <th>3</th>
               <td class="start active"></td>
               <td class="end"></td>
             </tr> 
-            <tr id="player4_strip" class="playerButton">
-              <th class="playerButton">4</th>
+            <tr id="player4_strip">
+              <th>4</th>
               <td class="start active"></td>
               <td class="end"></td>
             </tr>
@@ -100,7 +100,8 @@
     </div>
     <script src="js/events.js" type="text/javascript"></script>
     <script src="js/helper.js" type="text/javascript"></script>
-      <!-- if (document.querySelectorAll('tr#player1_strip td.addTrack').length === 0){
+    <script>
+      if (document.querySelectorAll('tr#player1_strip td.addTrack').length === 0){
         document.getElementById('player1_strip').style.display = "none";
       }if (document.querySelectorAll('tr#player2_strip td.addTrack').length === 0){
         document.getElementById('player2_strip').style.display = "none";
@@ -109,6 +110,7 @@
         document.getElementById('player3_strip').style.display = "none";
       }if (document.querySelectorAll('tr#player4_strip td.addTrack').length === 0){
         document.getElementById('player4_strip').style.display = "none";
-      } -->
+      }
+    </script>
   </body>
 </html>
