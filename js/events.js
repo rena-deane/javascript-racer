@@ -47,8 +47,8 @@ get4Player.addEventListener("click", function(){
   });
 
 var addTracks = document.getElementById("longerTrack");
-var lengthTrack = document.querySelectorAll("#player1_strip td");
 addTracks.addEventListener("click", function(){
+  var lengthTrack = document.querySelectorAll("#player1_strip td");
   if (lengthTrack.length <=10){
     $("#player1_strip").append(HTMLaddtoTrack);
     $("#player2_strip").append(HTMLaddtoTrack);
@@ -74,4 +74,5 @@ removeTracks.addEventListener("click", function(){
   }
 })
 // set track length
+
 
