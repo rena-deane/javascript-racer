@@ -47,4 +47,6 @@ get4Player.addEventListener("click", function(){
   });
 
 
-// get player strips and tooltip options
+// set track length
+
+

@@ -19,16 +19,22 @@
           </div>
         </div>
         <!-- players buttons -->
-        <div class="select-players">
-          <p class="player-heading">Choose Players</p>
-          <div class="choosePlayers">
-           <input type="button" class="playerButton" name="player1" id="player1" href="#" value="1">
-           <input type="button" class="playerButton" name="player2" id="player2" href="#" value="2">
-           <input type="button" class="playerButton" name="player3" id="player3" href="#" value="3">
-           <input type="button" class="playerButton" name="player4" id="player4" href="#" value="4">
+        <div class="row">
+          <div class="twelve columns">
+           <input type="button" class="playerButton" name="player1" id="player1" href="#" value="1 Player">
+           <input type="button" class="playerButton" name="player2" id="player2" href="#" value="2 Players">
+           <input type="button" class="playerButton" name="player3" id="player3" href="#" value="3 Players">
+           <input type="button" class="playerButton" name="player4" id="player4" href="#" value="4 Players">
           </div>
         </div>
-        
+
+        <!-- track length -->
+        <div class="row">
+          <div class="twelve columns">
+            <input type="button" name="lessTrack" class="trackLength" id="shorterTrack" value="- shorter track (min 4)">
+            <input type="button" name="moreTrack" class="trackLength" id="longerTrack" value="+ longer track (max 10)">
+          </div>
+        </div>
         <!-- BUTTON how to play instructions -->
         <div class="row">
           <div class="twelve columns tooltipHow">
@@ -50,13 +56,6 @@
             </span>
           </div>
         </div>
-
-        <!-- BUTTON set track length -->
-        <div class="row">
-          <div class="twelve columns">
-            <input id="setTrack" class="button" type="button" name="addPlayers" value="Set Track" />
-          </div>
-        </div>
         
         <!-- restart -->
         <div class="row">
@@ -71,22 +70,18 @@
               <tr id="player1_strip">
                 <th>1</th>
                 <td class="start active"></td>
-                <td class="end"></td>
               </tr>
               <tr id="player2_strip">
                 <th>2</th>
                 <td class="start active"></td>
-                <td class="end"></td>
               </tr>
               <tr id="player3_strip">
                 <th>3</th>
                 <td class="start active"></td>
-                <td class="end"></td>
               </tr> 
               <tr id="player4_strip">
                 <th>4</th>
                 <td class="start active"></td>
-                <td class="end"></td>
               </tr>
             </table>
           </div>

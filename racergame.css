@@ -28,14 +28,24 @@ div.row {
   text-align: center;
 }
 
-.player-heading, .select-players{
+.heading, {
   text-align: center;
 }
 
 #player1, #player2,#player3,#player4{
   border:none;
   background-color: #f7e0af;
-  font-size: 1.2em;
+  font-size: .75em;
+  padding: 0;
+  width: 8em;
+}
+
+#shorterTrack {
+  background-color: #f79696;
+}
+
+#longerTrack {
+  background-color: #d5f48b; 
 }
 
 /* how to play */
