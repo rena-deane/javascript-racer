@@ -83,11 +83,6 @@ div.row {
     display: inline-block;
 }
 
-/* play Again */
-#playAgain {
-  display: none;
-}
-
 /* racing table */
 th:first-child {
     padding: 1em 1em;
@@ -131,8 +126,4 @@ div.twelve.columns.restart.again  {
 /* buttons */
 input.button {
   background-color: #ffffff;
-}
-
-input#playAgain {
-  background-color: #93d1f9;
 }
