@@ -6,7 +6,6 @@ h1 {
   font-family: 'Roboto Slab', serif;
   color: #a57629;
   text-align: center;
-  font-family: 'Roboto Slab', serif;
   margin: 0;
 }
 
@@ -29,18 +28,24 @@ div.row {
   text-align: center;
 }
 
-.player-heading {
-  text-align: center;
-}
-
-.select-players {
+.heading, {
   text-align: center;
 }
 
 #player1, #player2,#player3,#player4{
   border:none;
   background-color: #f7e0af;
-  font-size: 1.2em;
+  font-size: .75em;
+  padding: 0;
+  width: 8em;
+}
+
+#shorterTrack {
+  background-color: #f79696;
+}
+
+#longerTrack {
+  background-color: #d5f48b; 
 }
 
 /* how to play */
