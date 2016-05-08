@@ -3,10 +3,11 @@ body {
   font-family: Arial, sans-serif;
 }
 
-h1, p.description{
-  font-family: 'Roboto Slab', serif;
+h1 {
   color: #a57629;
   text-align: center;
+  font-family: 'Roboto Slab', serif;
+  margin: 0;
 }
 
 th {
@@ -16,13 +17,30 @@ th {
 }
 
 p {
+  color: #a57629;
+  font-family: 'Roboto Slab', serif;
+  font-size: 2em;
+  margin: .5em;
   text-align: left;
-  margin: 1em;
 }
 
 div.row {
   margin: 10px 0;
   text-align: center;
+}
+
+.player-heading {
+  text-align: center;
+}
+
+.select-players {
+  text-align: center;
+}
+
+#player1, #player2,#player3,#player4{
+  border:none;
+  background-color: #f7e0af;
+  font-size: 1.2em;
 }
 
 /* how to play */
@@ -49,29 +67,22 @@ div.row {
   visibility: initial;
 }
 
+.tooltiptextHow p{
+  color: #ffffff;
+  font-size: 1em;
+}
+
 /* setPlayers */
 .tooltipPlayers {
     position: relative;
     display: inline-block;
 }
 
-.tooltipPlayers .tooltiptextPlayers {
-    visibility: hidden;
-    width: 10em;
-    background-color: #5f5f5f;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px 0;
-
-    /* Position the tooltip */
-    position: absolute;
-    z-index: 1;
+/* play Again */
+#playAgain {
+  display: none;
 }
 
-.tooltipPlayers .tooltiptextPlayers.show {
-  visibility: initial;
-}
 /* racing table */
 th:first-child {
     padding: 1em 1em;

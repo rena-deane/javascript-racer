@@ -14,16 +14,5 @@ leavehowToPlay.addEventListener("mouseleave", hideRules);
   }
 
 //set Players
-var choosePlayers = document.getElementById('setPlayers');
-choosePlayers.addEventListener("click", showPlayers);
-  function showPlayers(){
-    toolTip = document.querySelector(".container .row .tooltipPlayers span.tooltiptextPlayers");
-    toolTip.classList.add("show");
-  }
 
-var leavechoosePlayers = document.getElementById('setPlayers');
-leavechoosePlayers.addEventListener("click", showPlayers);
-  function hidePlayers(){
-    toolTip = document.querySelector(".container .row .tooltipPlayers span.tooltiptextPlayers.show")
-    toolTip.classList.remove("show");
-  }
+// get player strips and tooltip options
