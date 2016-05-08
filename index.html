@@ -6,6 +6,8 @@
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
     <link rel="stylesheet" type="text/css" href="racergame.css">
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>    
+    <script src="js/helper.js" type="text/javascript"></script>
+    <script src="js/jQuery.js" type="text/javascript"></script>
   </head>
 
   <body>
@@ -21,15 +23,15 @@
           <p class="player-heading">Choose Players</p>
           <div class="choosePlayers">
            <input type="button" class="playerButton" name="player1" id="player1" href="#" value="1">
-           <input type="button" class="playerButton" name="player2" id="player1" href="#" value="2">
-           <input type="button" class="playerButton" name="player3" id="player1" href="#" value="3">
-           <input type="button" class="playerButton" name="player4" id="player1" href="#" value="4">
+           <input type="button" class="playerButton" name="player2" id="player2" href="#" value="2">
+           <input type="button" class="playerButton" name="player3" id="player3" href="#" value="3">
+           <input type="button" class="playerButton" name="player4" id="player4" href="#" value="4">
           </div>
         </div>
-        <!-- row of buttons -->
+        
+        <!-- BUTTON how to play instructions -->
         <div class="row">
           <div class="twelve columns tooltipHow">
-            <!-- BUTTON how to play instructions -->
             <input id="rules" class="button" type="button" name="rules" value="How to Play" />
             <span class="tooltiptextHow">
               <p>
@@ -69,7 +71,7 @@
               <tr id="player1_strip">
                 <th>1</th>
                 <td class="start active"></td>
-                
+                <td class="end"></td>
               </tr>
               <tr id="player2_strip">
                 <th>2</th>
@@ -92,20 +94,6 @@
 
       </div>
     </div>
-    <script src="js/events.js" type="text/javascript"></script>
-    <script src="js/helper.js" type="text/javascript"></script>
-    <script src="js/jQuery.js" type="text/javascript"></script>
-    <script>
-      if (document.querySelectorAll('tr#player1_strip td.addTrack').length === 0){
-        document.getElementById('player1_strip').style.display = "none";
-      }if (document.querySelectorAll('tr#player2_strip td.addTrack').length === 0){
-        document.getElementById('player2_strip').style.display = "none";
-      }
-      if (document.querySelectorAll('tr#player3_strip td.addTrack').length === 0){
-        document.getElementById('player3_strip').style.display = "none";
-      }if (document.querySelectorAll('tr#player4_strip td.addTrack').length === 0){
-        document.getElementById('player4_strip').style.display = "none";
-      }
-    </script>
   </body>
 </html>
+    <script src="js/events.js" type="text/javascript"></script>

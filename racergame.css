@@ -6,7 +6,6 @@ h1 {
   font-family: 'Roboto Slab', serif;
   color: #a57629;
   text-align: center;
-  font-family: 'Roboto Slab', serif;
   margin: 0;
 }
 
@@ -29,11 +28,7 @@ div.row {
   text-align: center;
 }
 
-.player-heading {
-  text-align: center;
-}
-
-.select-players {
+.player-heading, .select-players{
   text-align: center;
 }
 
