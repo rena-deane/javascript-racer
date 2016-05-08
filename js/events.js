@@ -46,7 +46,32 @@ get4Player.addEventListener("click", function(){
     document.getElementById('player4_strip').style.display = "inherit";
   });
 
+var addTracks = document.getElementById("longerTrack");
+var lengthTrack = document.querySelectorAll("#player1_strip td");
+addTracks.addEventListener("click", function(){
+  if (lengthTrack.length <=10){
+    $("#player1_strip").append(HTMLaddtoTrack);
+    $("#player2_strip").append(HTMLaddtoTrack);
+    $("#player3_strip").append(HTMLaddtoTrack);
+    $("#player4_strip").append(HTMLaddtoTrack);
+  }
+  else {
+    alert("No more room for extra tracks");
+  } 
+});
 
+var removeTracks = document.getElementById('shorterTrack');
+removeTracks.addEventListener("click", function(){
+  var newLength = $("#player1_strip td").length;
+  if (newLength > 2){
+    $("#player1_strip td:last").remove();
+    $("#player2_strip td:last").remove();
+    $("#player3_strip td:last").remove();
+    $("#player4_strip td:last").remove();
+  }
+  else{
+    alert("where's the track? Add more tracks!")
+  }
+})
 // set track length
-
 
