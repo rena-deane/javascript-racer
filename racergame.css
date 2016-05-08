@@ -15,6 +15,10 @@ th {
   color: #888888;
 }
 
+tr {
+  background-color: #ffffff;
+}
+
 p {
   color: #a57629;
   font-family: 'Roboto Slab', serif;
@@ -56,31 +60,24 @@ div.row {
 
 .tooltipHow .tooltiptextHow {
     visibility: hidden;
-    width: 20em;
+    width: 18em;
     background-color: #5f5f5f;
     color: #fff;
     text-align: center;
     border-radius: 6px;
-    padding: 5px 0;
-
+    padding: 1em;
+    /* font */
+    font-size: 1em;
+    text-align: left;
     /* Position the tooltip */
     position: absolute;
     z-index: 1;
+    top: -.5em;
+    left: 58%; 
 }
 
 .tooltipHow .tooltiptextHow.show {
   visibility: initial;
-}
-
-.tooltiptextHow p{
-  color: #ffffff;
-  font-size: 1em;
-}
-
-/* setPlayers */
-.tooltipPlayers {
-    position: relative;
-    display: inline-block;
 }
 
 /* racing table */
@@ -91,9 +88,6 @@ th:first-child {
 table.racer_table {
   border-collapse: separate;
   border-spacing: 0 10px;
-}
-tr {
-  background-color: #ffffff;
 }
 
 .racer_table td {
